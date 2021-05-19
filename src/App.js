@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./My Components/Header";
+import { Todos } from './My Components/Todos';
+import { Footer } from "./My Components/Footer";
 
 function App() {
+  let myVariable = 330;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header title="My Todos List"  searchBar={true}/>
+    <Todos/>
+    <Footer/>
+    </>
   );
 }
 
